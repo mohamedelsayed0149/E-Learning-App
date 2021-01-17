@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Teams() {
+export const Teams = () =>  {
   return (
     <div className='teams'>
       <h1>Microsoft Teams</h1>
     </div>
   );
-}
+};
 
 export const TeamsOne = () => {
   return (
@@ -19,7 +19,7 @@ export const TeamsOne = () => {
 export const TeamsTwo = () => {
   return (
     <div className='teams'>
-      <h1>teams/teams2</h1>
+      <h1>Reports/reports2</h1>
     </div>
   );
 };
@@ -27,9 +27,7 @@ export const TeamsTwo = () => {
 export const TeamsThree = () => {
   return (
     <div className='teams'>
-      <h1>teams/teams3</h1>
+      <h1>Reports/reports3</h1>
     </div>
   );
 };
-
-export default Teams;

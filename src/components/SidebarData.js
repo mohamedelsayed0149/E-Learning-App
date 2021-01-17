@@ -11,43 +11,67 @@ export const SidebarData = [
     title: 'Home',
     path: '/',
     icon: <AiIcons.AiFillHome />,
-    cName: 'nav-text'
+  
   },
   {
-    title: 'Informations',
+    title: 'Information',
     path: '/reports',
     icon: <IoIcons.IoIosPaper />,
-    cName: 'nav-text'
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: 'Contact',
+        path: '/reports/reports1',
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav'
+      },
+      {
+        title: 'Academic Data',
+        path: '/reports/reports2',
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav'
+      },
+      {
+        title: 'Status',
+        path: '/reports/reports3',
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav'
+      }
+    ]
+  
   },
   {
     title: 'Registering',
     path: '/products',
     icon: <FaIcons.FaUserPlus />,
-    cName: 'nav-text'
+  
   },
   {
     title: 'MicrosoftTeams',
-    path: '/team',
+    path: '/teams',
     icon: <IoIcons.IoMdPeople />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
     subNav: [
       {
-        title: 'Reports',
-        path: '/team/reports1',
+        title: 'Reports 1',
+        path: '/teams/teams1',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'Reports 2',
-        path: '/team/team2',
+        path: '/teams/teams2',
         icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
       {
         title: 'Reports 3',
-        path: '/team/team3',
-        icon: <IoIcons.IoIosPaper />
+        path: '/teams/teams3',
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav'
       }
     ]
   },
@@ -55,18 +79,18 @@ export const SidebarData = [
     title: 'Notifications',
     path: '/messages',
     icon: <FaIcons.FaBell />,
-    cName: 'nav-text'
+  
   },
   {
     title: 'Support',
     path: '/support',
     icon: <IoIcons.IoMdHelpCircle />,
-    cName: 'nav-text'
+  
   },
   {
     title: 'LogOut',
     path: '/logout',
     icon: <BiIcons.BiLogOut/>,
-    cName: 'nav-text'
+  
   }
 ];
